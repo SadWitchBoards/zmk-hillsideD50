@@ -1,0 +1,16 @@
+if SHIELD_HILLSIDE_D50_LEFT
+
+config ZMK_KEYBOARD_NAME
+    default "Hillside D50"
+
+config ZMK_SPLIT_ROLE_CENTRAL
+    default y
+
+endif
+
+if SHIELD_HILLSIDE_D50_LEFT || SHIELD_HILLSIDE_D50_RIGHT
+
+config ZMK_SPLIT
+    default y
+
+endif

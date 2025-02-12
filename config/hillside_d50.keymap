@@ -1,0 +1,41 @@
+// User default keymap. But for a D50 right, 52 left setup
+
+// Dummy keymap as using Dactyl 50 on right hand with a 52 on the left.
+// Right below matches Dactyl 50 structure, left matches 52's. Actual key values do not matter.
+
+#include <behaviors.dtsi>
+#include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/ext_power.h>
+#include <dt-bindings/zmk/rgb.h>
+#include <dt-bindings/zmk/outputs.h>
+
+#define BASE_L   0
+#define ADJ_L    1
+
+/ {
+    keymap {
+        compatible = "zmk,keymap";
+
+/* System test controls on left side
+*/
+        default_layer { bindings = <
+// col 0          1           2              3             4               5
+&kp  N0       &kp  N1       &kp  N2       &kp  N3       &kp  N4            &kp  N5                                                                            &kp  N6       &kp  N7       &kp  N8       &kp  O        &kp  P        &kp  BSPC
+&kp  N0       &kp  N1       &kp  N2       &kp  N3       &kp  N4            &rgb_ug RGB_TOG                                                                    &kp  H        &kp  J        &kp  K        &kp  L        &kp  SEMI     &kp  ENTER
+&out OUT_USB  &out OUT_BLE  &kp  N1       &kp  N1       &ext_power EP_OFF  &ext_power EP_ON  &kp  N1                              &kp  N7       &kp  LALT     &kp  N        &kp  M        &kp  COMMA    &kp  DOT      &kp  SLASH    &kp  RSHFT
+              &kp  N1       &kp  N1       &kp  N1       &kp  N1            &kp  N1           &kp  N1      &mo  ADJ_L              &kp  N1       &kp  SPACE    &kp  C_MUTE                 &kp  UP       &kp  DOWN
+                        >;
+                };
+
+/* ADJUST */
+        adj_layer { bindings = <
+&kp  N2       &kp  N2       &kp  N2       &kp  N2       &kp  N2       &kp  N2                                                                 &kp  N2               &rgb_ug RGB_COLOR_HSB(  0,100,50)  &rgb_ug RGB_BRI   &kp  N2       &kp  N2  &none
+&kp  N2       &kp  N2       &kp  N2       &kp  N2       &kp  N2       &kp  N2                                                                 &rgb_ug RGB_TOG       &rgb_ug RGB_COLOR_HSB(120,100,50)  &rgb_ug RGB_BRD   &kp  N2       &kp  N2  &none
+&kp  N2       &kp  N2       &kp  N2       &kp  N2       &kp  N2       &kp  N2       &kp  N2                              &kp  N2       &kp  N2&kp  N2               &rgb_ug RGB_COLOR_HSB(240,100,50)  &kp  N2           &kp  N2       &kp  N2  &kp  N9
+              &kp  N2       &kp  N2       &kp  N2       &kp  N2       &kp  N2       &kp  N2      &kp  N2                 &trans        &kp  N2&kp  N2                                                  &kp  N2           &none
+                        >;
+                };
+
+    };
+};
+

@@ -1,0 +1,32 @@
+// Shield default keymap 
+
+/*
+    Set key code or action per location and layer.
+*/
+
+// Dummy as using Dactyl 50 on right hand with a 52 on the left.
+// Right below matches Dactyl 50 structure, left matches 52's. Actual key values do not matter.
+
+#include <behaviors.dtsi>
+#include <dt-bindings/zmk/keys.h>
+
+#define BASE_L   0
+#define NAV_L    1
+#define SYM_L    2
+#define ADJ_L    3
+
+/ {
+    keymap {
+        compatible = "zmk,keymap";
+
+/* QWERTY */
+        default_layer { bindings = <
+&kp  GRAVE   &kp  Q       &kp  W       &kp  E       &kp  R       &kp  T                                                             &kp  Y       &kp  U       &kp  I       &kp  O       &kp  P       &kp  BSPC
+&kp  TAB     &kp  A       &kp  S       &kp  D       &kp  F       &kp  G                                                             &kp  H       &kp  J       &kp  K       &kp  L       &kp  SEMI    &kp  ENTER
+&kp  LSHFT   &kp  Z       &kp  X       &kp  C       &kp  V       &kp  B       &kp  LCTRL                  &kp  N7      &kp  LALT    &kp  N       &kp  M       &kp  COMMA   &kp  DOT     &kp  SLASH   &kp  RSHFT
+             &kp  N1      &kp  LEFT    &kp  RIGHT   &kp  N2      &kp  LGUI    &sk  LSHIFT &mo  NAV_L      &mo  SYM_L   &kp  SPACE   &kp  C_MUTE               &kp  UP      &kp  DOWN
+                        >;
+                };
+
+    };
+};
