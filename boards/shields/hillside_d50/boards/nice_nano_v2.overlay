@@ -5,13 +5,14 @@
 /*
 Set pins for
 
--   Smart LEDs (which sit on SPI)
+-   Bare LED
+-   Smart LEDs
 -   Display
 
 Using two-part pin numbers at
 https://nicekeyboards.com/docs/nice-nano/pinout-schematic/
 
-Set type of smart LED and display.
+Set type of bare LED, smart LED, and display.
 */
 
 
