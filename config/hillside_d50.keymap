@@ -26,7 +26,9 @@
     keymap {
         compatible = "zmk,keymap";
 
-/* System test controls on left side */
+/* System test controls on left side
+Todo: add beep
+*/
 //        test_layer { bindings = <
 //// col 0          1           2              3             4               5
 //&kp  N0       &kp  N1       &kp  N2       &kp  N3       &kp  N4            &kp  N5                                                                            &kp  N6       &kp  N7       &kp  N8       &kp  N9       &kp  A        &kp  B
@@ -47,24 +49,24 @@
         nav_layer { bindings = <
 &kp  Copy     &kp  N1       &kp  N2       &kp  N3       &kp  N4       &kp  N5                                                                        &kp   N6      &kp  N7      &kp   N8      &kp   N9      &kp  N0       &trans
 &kp  Cut      &kp  LGUI     &kp  LALT     &kp  LCTRL    &kp  LSHFT    &kp  Paste                                                                     &kp   HOME    &kp  LEFT    &kp   UP      &kp   DOWN    &kp  RIGHT    &kp  END
-&trans        &kp  F1       &kp  F2       &kp  F3       &kp  F4       &kp  F5       &none         &none                  &none         &kp  DOT      &kp   F6      &kp  F7      &kp   F8      &kp   F9      &kp  F10      &trans
+&trans        &kp  F1       &kp  F2       &kp  F3       &kp  F4       &kp  F5       &none         &mo  ADJ_L             &none         &kp  DOT      &kp   F6      &kp  F7      &kp   F8      &kp   F9      &kp  F10      &trans
                             &kp  Undo     &kp  Redo                   &none         &none         &trans                 &mo ADJ_L     &trans        &kp   COMMA                &kp   PG_UP   &kp   PG_DN 
                         >;
                 };
 
         sym_layer { bindings = <
-&kp  INS      &kp  EXCL     &kp  AT       &kp  HASH     &kp  DOLLAR   &kp  PERCENT                                                                   &kp  CARET    &kp  AMPS     &kp  ASTRK    &kp  LPAR     &kp  RPAR     &kp  DEL
-&caps_word    &kp  BSLH     &kp  MINUS    &kp  EQUAL    &kp  LBKT     &kp  RBKT                                                                      &kp C_VOL_UP  &kp  RSHFT    &kp  RCTRL    &kp  LALT     &kp  RGUI     &trans
-&trans        &kp  PIPE     &kp  UNDER    &kp  PLUS     &kp  LBRC     &kp  RBRC     &kp  C_PP     &none                    &none       &none         &kp C_VOL_DN  &kp  N0       &kp  N1       &kp  N2       &none         &trans
-                            &none         &trans                      &trans        &none         &mo  ADJ_L               &trans      &none         &none                       &kp  RCTRL    &kp  K_APP
+&key_repeat   &kp  EXCL     &kp  AT       &kp  HASH     &kp  DOLLAR   &kp  PERCENT                                                                   &kp  CARET    &kp  AMPS     &kp  ASTRK    &kp  LPAR     &kp  RPAR     &kp  DEL
+&caps_word    &kp  BSLH     &kp  MINUS    &kp  EQUAL    &kp  LBKT     &kp  RBKT                                                                      &kp C_VOL_UP  &kp  RSHFT    &kp  RCTRL    &kp  LALT     &kp  RGUI     &kp  INS
+&kp  PSCRN    &kp  PIPE     &kp  UNDER    &kp  PLUS     &kp  LBRC     &kp  RBRC     &none         &none                  &mo  ADJ_L    &none         &kp C_VOL_DN  &kp  C_MUTE   &kp  C_PP     &kp  SQT      &kp  DQT      &kp  PAUSE_BREAK
+                            &kp  F11      &kp  F12                    &kp  SLCK     &none         &mo  ADJ_L             &trans        &none         &none                       &kp  K_APP    &sk  RALT 
                         >;
                 };
 
         adj_layer { bindings = <
-&kp  N2       &kp  N2       &kp  N2       &kp  N2       &kp  N2       &kp  N2                                                                 &kp  N2            &kp N2       &kp  N2           &kp  N1     &kp  N1  &none
-&none         &bt  BT_SEL 0 &bt  BT_SEL 1 &bt  BT_SEL 2 &bt  BT_SEL 3 &bt  BT_SEL 4                                                           &kp  N2            &kp N2       &kp  N2           &kp  N2     &kp  N2  &none
-&bootloader   &sys_reset    &kp  N2       &out OUT_USB  &out OUT_BLE  &none         &bt BT_CLR   &kp  N2                 &kp  N2     &kp  N2  &kp  N2            &kp N2       &kp  N2           &kp  N2     &kp  N2  &kp  N9
-                            &bl  BL_TOG   &bl  BL_CYCLE               &kp  N2       &kp  N2      &kp  N2                 &trans      &kp  N2  &kp  N2                         &kp  N2           &none
+&none         &none         &none         &none         &none         &none                                                                          &soft_off     &none         &none         &none         &none         &none 
+&none         &bt  BT_SEL 0 &bt  BT_SEL 1 &bt  BT_SEL 2 &bt  BT_SEL 3 &bt  BT_SEL 4                                                                  &none         &none         &none         &none         &none         &none
+&bootloader   &sys_reset    &none         &out OUT_USB  &out OUT_BLE  &none         &bt BT_CLR   &none                   &none         &none         &none         &none         &none         &none         &sys_reset    &bootloader
+                            &bl  BL_TOG   &bl  BL_CYCLE               &none         &none        &trans                  &trans        &none         &none                       &none         &none
                         >;
                 };
 
