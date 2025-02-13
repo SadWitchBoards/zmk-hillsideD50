@@ -1,16 +1,21 @@
 #include <dt-bindings/led/led.h>
 
-/* Sets pins for
+/* Set LED and dislay details.
 
--   Display
+Set pins
+
 -   Smart LEDs (which sit on SPI)
+-   Display
 
+Using two-part pin numbers at
+https://nicekeyboards.com/docs/nice-nano/pinout-schematic/
+
+Set type of smart LED and display.
 */
 
-/* nice!nano uses two-part pin numbers. */
 &pinctrl {
 
-    /* SPI for LED */
+    /* SPI for Smart LEDs */
 
     spi3_default: spi3_default {
         group1 {

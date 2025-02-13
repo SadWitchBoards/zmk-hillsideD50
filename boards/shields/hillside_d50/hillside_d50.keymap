@@ -4,8 +4,7 @@
     Set key code or action per location and layer.
 */
 
-// Dummy as using Dactyl 50 on right hand with a 52 on the left.
-// Right below matches Dactyl 50 structure, left matches 52's. Actual key values do not matter.
+// Dummy for board testing
 
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
