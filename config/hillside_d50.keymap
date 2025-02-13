@@ -26,14 +26,14 @@
         compatible = "zmk,keymap";
 
 /* System test controls on left side */
-        test_layer { bindings = <
-// col 0          1           2              3             4               5
-&kp  N0       &kp  N1       &kp  N2       &kp  N3       &kp  N4            &kp  N5                                                                            &kp  N6       &kp  N7       &kp  N8       &kp  O        &kp  P        &kp  BSPC
-&kp  N0       &kp  N1       &kp  N2       &kp  N3       &kp  N4            &rgb_ug RGB_TOG                                                                    &kp  H        &kp  J        &kp  K        &kp  L        &kp  SEMI     &kp  ENTER
-&out OUT_USB  &out OUT_BLE  &kp  N1       &kp  N1       &ext_power EP_OFF  &ext_power EP_ON  &kp  N1      &kp  N2                 &kp  N7       &kp  LALT     &kp  N        &kp  M        &kp  COMMA    &kp  DOT      &kp  SLASH    &kp  RSHFT
-                            &bl  BL_TOG   &bl  BL_CYCLE                    &kp  N1           &kp  N1      &mo  ADJ_L              &kp  N1       &kp  SPACE    &kp  C_MUTE                 &kp  UP       &kp  DOWN
-                        >;
-                };
+//        test_layer { bindings = <
+//// col 0          1           2              3             4               5
+//&kp  N0       &kp  N1       &kp  N2       &kp  N3       &kp  N4            &kp  N5                                                                            &kp  N6       &kp  N7       &kp  N8       &kp  O        &kp  P        &kp  BSPC
+//&kp  N0       &kp  N1       &kp  N2       &kp  N3       &kp  N4            &rgb_ug RGB_TOG                                                                    &kp  H        &kp  J        &kp  K        &kp  L        &kp  SEMI     &kp  ENTER
+//&out OUT_USB  &out OUT_BLE  &kp  N1       &kp  N1       &ext_power EP_OFF  &ext_power EP_ON  &kp  N1      &kp  N2                 &kp  N7       &kp  LALT     &kp  N        &kp  M        &kp  COMMA    &kp  DOT      &kp  SLASH    &kp  RSHFT
+//                            &bl  BL_TOG   &bl  BL_CYCLE                    &kp  N1           &kp  N1      &mo  ADJ_L              &kp  N1       &kp  SPACE    &kp  C_MUTE                 &kp  UP       &kp  DOWN
+//                        >;
+//                };
 
         default_layer { bindings = <
 &kp  GRAVE    &kp  Q        &kp  W        &kp  E        &kp  R        &kp  T                                                                         &kp  Y        &kp  U        &kp  I        &kp  O        &kp  P        &kp  BSPC
