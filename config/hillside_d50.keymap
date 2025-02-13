@@ -61,10 +61,10 @@
 
 /* ADJUST */
         adj_layer { bindings = <
-&kp  N2       &kp  N2       &kp  N2       &kp  N2       &kp  N2       &kp  N2                                                                 &kp  N2            &rgb_ug RGB_COLOR_HSB(  0,100,50)  &rgb_ug RGB_BRI   &kp  N2     &kp  N2  &none
-&kp  N2       &kp  N2       &kp  N2       &kp  N2       &kp  N2       &kp  N2                                                                 &rgb_ug RGB_TOG    &rgb_ug RGB_COLOR_HSB(120,100,50)  &rgb_ug RGB_BRD   &kp  N2     &kp  N2  &none
-&kp  N2       &kp  N2       &kp  N2       &kp  N2       &kp  N2       &kp  N2       &kp  N2      &kp  N2                 &kp  N2     &kp  N2  &kp  N2            &rgb_ug RGB_COLOR_HSB(240,100,50)  &kp  N2           &kp  N2     &kp  N2  &kp  N9
-                            &kp  N2       &kp  N2                     &kp  N2       &kp  N2      &kp  N2                 &trans      &kp  N2  &kp  N2                                               &kp  N2           &none
+&kp  N2       &kp  N2       &kp  N2       &kp  N2       &kp  N2       &kp  N2                                                                 &kp  N2            &kp N2       &kp  N2           &kp  N2     &kp  N2  &none
+&kp  N2       &kp  N2       &kp  N2       &kp  N2       &kp  N2       &kp  N2                                                                 &kp  N2            &kp N2       &kp  N2           &kp  N2     &kp  N2  &none
+&kp  N2       &kp  N2       &kp  N2       &kp  N2       &kp  N2       &kp  N2       &kp  N2      &kp  N2                 &kp  N2     &kp  N2  &kp  N2            &kp N2       &kp  N2           &kp  N2     &kp  N2  &kp  N9
+                            &kp  N2       &kp  N2                     &kp  N2       &kp  N2      &kp  N2                 &trans      &kp  N2  &kp  N2                         &kp  N2           &none
                         >;
                 };
 
