@@ -27,7 +27,6 @@
         compatible = "zmk,keymap";
 
 /* System test controls on left side
-Todo: add beep
 */
 //        test_layer { bindings = <
 //// col 0          1           2              3             4               5

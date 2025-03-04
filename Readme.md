@@ -1,13 +1,7 @@
-# ZMK for Hillside Dactyl 50 0.1.0-alpha.2
-
-This is firmware for the Hillside D50. 
-But it is bare-bones, only sufficient to:
-
-- Test hardware on the left.
+# ZMK Hillside keyboards firmware
 
 ## Status
 
-- The keymap is QWERTY but with several debug keys on the base and adjust layers
 - ?? The Nice!view display works well on both sides.
 
 ## Next
@@ -15,20 +9,28 @@ But it is bare-bones, only sufficient to:
 - Restore the default keymap to the board definition.
 
 - Take notes for default keymap as needed.
-- Otherwise, nothing current. Use as is until get a left D50 board.
 
-## Start of Future non-hybrid content
+## Start of Future Readme
 
-This is the default ZMK firmware for the Hillside D50 ergonomic keyboard.
-It provides a simple to start with QWERTY layout,
-  enables the nice!view display, but disables the LED's.
+This is the default ZMK firmware for Hillside keyboards.
+
+-   Hillside Dactyl 50
+    -   A simple to start with QWERTY keymap using three main layers
+        and one adjust layer.
+    -   The configuration enables the nice!view display,
+        but disables the LED's as they eat batteries.
+    -   A hardware testing layer can be uncommented to enable easier one sided
+        access to adjust layer type functions for hardware build testing.
+
+The repo is a module that can be included into the main ZMK config.
 
 ### TODO
 
 - link to D50 repo
 
-
 ## See also
+
+### ZMK module repo setup
 
 The user default files were created by following:
 
@@ -39,3 +41,6 @@ The ZMK guides used for this module based configuration:
 - [New keyboard shield guide](https://zmk.dev/docs/development/new-shields)
 - [RGB Underglow](https://zmk.dev/docs/features/underglow#adding-rgb-underglow-to-a-board)
   Using the nice!nano two-part pin numbers, not the Arduino ones.
+
+I also cribbed module repo structure off of sadekbaroudi's
+[fingerpunch repo](https://github.com/sadekbaroudi/zmk-fingerpunch-keyboards).

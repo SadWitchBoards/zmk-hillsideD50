@@ -1,4 +1,4 @@
-/* Define hardware details. */
+/* Define board hardware details. */
 
 #include <dt-bindings/led/led.h>
 
