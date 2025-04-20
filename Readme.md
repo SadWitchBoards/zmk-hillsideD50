@@ -17,6 +17,10 @@ It features:
 
 The repo is a module that can be included into the main ZMK config.
 
+
+![Default keymap](./image/D50_keymap_hillside.drawio.png) 
+
+
 ### TODO
 
 - link to D50 repo
