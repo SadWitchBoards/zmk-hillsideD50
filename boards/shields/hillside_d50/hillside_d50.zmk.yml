@@ -9,6 +9,7 @@ features:
   - backlight
   - underglow
   - display
+  - studio
 siblings:
   - hillside_d50_left
   - hillside_d50_right

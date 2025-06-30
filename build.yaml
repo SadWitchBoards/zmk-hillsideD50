@@ -26,6 +26,9 @@ include:
   # Dactyl 50
   - board: nice_nano_v2
     shield: hillside_d50_left nice_view
+    # Uncomment these two lines to enable ZMK Studio support
+    # snippet: studio-rpc-usb-uart
+    # cmake-args: -DCONFIG_ZMK_STUDIO=y
 
   # Right side of Dactyl 50
   - board: nice_nano_v2
