@@ -13,9 +13,9 @@ Define
 
 / {
     chosen {
-        zmk,kscan = &kscan0;
-        zmk,matrix-transform = &default_transform;
         zmk,physical-layout = &physical_layout0;
+        // kscan: in layout, as clearer, though could be here instead
+        // transform: in layout, as we enable studio which wants not in chosen
     };
 
     default_transform: keymap_transform_0 {
