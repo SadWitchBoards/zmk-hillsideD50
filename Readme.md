@@ -1,16 +1,18 @@
 # Hillside Dactyl 50 ZMK firmware
 
-> [!Note]
-> This board isn't released yet, so the link to it may be broken.
-
-
 This is the default [ZMK](https://zmk.dev/) firmware for the
     [Hillside Dactyl 50](https://github.com/mmccoyd/hillside_dactyl_50)
     keyboard.
 It features:
 
 -   A simple QWERTY keymap using three main layers and one adjust layer. 
--   A configuration that enables the nice!view display and the bare LED.
+-   Nice!view display and the bare LED enabled by default.
+-   [ZMK Studio](https://zmk.dev/docs/features/studio) is supported
+    but disabled.
+    If desired, it needs to be enabled in
+    [build.yaml](https://zmk.dev/docs/features/studio#building)
+    and added to the
+    [keymap](https://zmk.dev/docs/features/studio#keymap-changes).
 -   A hardware testing layer that can be uncommented to enable easier one sided
     and layer-free access to functions for hardware build testing.
 
